@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Jaan Hendrik Tomp</li>
+                <li>31/03/2003</li>
+                <li> Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://courses.cs.ut.ee/2024/WAD/fall/Main/HomePage" target=”_blank”>Web Application Development</a></td>
+                <td>Fall</td>
+                <td>TBD</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+
+        <form action="/submit-form" method="post">
+
+            <label for="arbitraryString">Course Title:</label>
+            <br>
+            <input type="text" id="arbitraryString" name="arbitraryString" required>
+            <br>
+    
+            <label for="dropdown">Semester:</label>
+            <br>
+            <select id="dropdown" name="dropdown">
+                <option value="option1">Fall</option>
+                <option value="option2">Spring</option>
+            </select>
+            <br>
+    
+            <label><strong>Attendance:</strong></label><br>    <!-- a really shitty way to do bold text REDO when css-->
+            <input type="radio" id="radio1" name="radioGroup" value="radio1" required>
+            <label for="radio1">Physical</label><br>
+            <input type="radio" id="radio2" name="radioGroup" value="radio2">
+            <label for="radio2">Virtual</label>
+            <br>
+    
+            <input type="submit" value="Submit">
+    
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target=”_blank”>OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target=”_blank”>Courses</a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
